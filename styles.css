@@ -1,0 +1,12 @@
+:root { --bg:#0f1724; --card:#0b1220; --accent:#7c3aed; --text:#e6eef8; }
+*{box-sizing:border-box}
+body{
+  margin:0; font-family:Inter, system-ui, Arial; background:linear-gradient(180deg,#071127, #0f1724); color:var(--text);
+  display:flex; align-items:center; justify-content:center; min-height:100vh; padding:20px;
+}
+.container{
+  max-width:760px; width:100%; background:rgba(255,255,255,0.03); padding:28px; border-radius:12px; box-shadow:0 8px 30px rgba(2,6,23,.6);
+}
+h1{margin:0 0 6px; font-size:28px}
+h2{margin-top:18px}
+a{color:var(--accent); text-decoration:none}
