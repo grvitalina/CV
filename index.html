@@ -1,40 +1,74 @@
 <!doctype html>
 <html lang="uk">
 <head>
-  <meta charset="utf-8" />
-  <meta name="viewport" content="width=device-width,initial-scale=1" />
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Віталіна — Резюме</title>
-  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-  <main class="container">
-    <header>
-      <h1>Віталіна Прізвище</h1>
-      <p>Software Engineer • QA • GameDev</p>
-      <p><a href="mailto:you@example.com">you@example.com</a> · <a href="https://linkedin.com/in/your">LinkedIn</a></p>
-    </header>
+  <!-- НЕБО -->
+  <header class="sky">
+    <div class="profile">
+      <img src="your-photo.jpg" alt="Фото" class="avatar">
+      <h1>Віталіна</h1>
+      <p>QA • GameDev • Software Engineer</p>
+      <div class="contacts">
+        <a href="mailto:you@example.com">you@example.com</a> · 
+        <a href="#">LinkedIn</a> · 
+        <a href="#">GitHub</a>
+      </div>
+    </div>
 
-    <section>
-      <h2>Про мене</h2>
-      <p>Коротко про навички: тестування веб/мобайл, C++, Blender, MySQL.</p>
-    </section>
+    <!-- КНОПКИ НА ПЕРЕХОДІ -->
+    <nav class="menu">
+      <button onclick="showSection('qa')">QA</button>
+      <button onclick="showSection('other')">Other</button>
+    </nav>
+  </header>
 
-    <section>
-      <h2>Досвід</h2>
+  <!-- МОРЕ -->
+  <main>
+    <!-- Секція QA -->
+    <section id="qa" class="ocean active">
+      <h2>Хард скіли</h2>
       <ul>
-        <li><strong>QA Intern</strong> — Компанія X (2025) — короткий опис.</li>
-        <li><strong>Проєкти</strong> — посилання на GitHub / демо.</li>
+        <li>Manual Testing</li>
+        <li>SQL, MySQL</li>
+        <li>Git, GitHub</li>
+        <li>HTML, CSS, JS</li>
       </ul>
+
+      <h2>Софт скіли</h2>
+      <ul>
+        <li>Комунікація</li>
+        <li>Аналіз</li>
+        <li>Командна робота</li>
+      </ul>
+
+      <h2>Проєктний досвід</h2>
+      <p>Опис кількох навчальних чи реальних проєктів.</p>
+
+      <h2>Освіта</h2>
+      <p>Твій університет, роки навчання</p>
+
+      <h2>Курси</h2>
+      <ul>
+        <li>QA курс</li>
+        <li>Основи C++</li>
+      </ul>
+
+      <h2>Мови</h2>
+      <p>Українська (рідна), Англійська (B1/B2)</p>
     </section>
 
-    <section>
-      <h2>Навички</h2>
-      <p>Testing, Automation, Blender, C++, SQL, React</p>
+    <!-- Секція Other -->
+    <section id="other" class="ocean">
+      <h2>Other</h2>
+      <p>Тут поки порожнє море 🌊</p>
     </section>
-
-    <footer>
-      <a href="resume.pdf" download>Завантажити PDF</a>
-    </footer>
   </main>
+
+  <script src="script.js"></script>
 </body>
 </html>
