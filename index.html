@@ -2,40 +2,204 @@
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.2/css/all.min.css">
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="stylemedia.css">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <title>Vitalina's CV</title>
 </head>
 <body>
-    <header>
-        <a href="#"class="logo">Vitalina</a>
-
-        <nav>
-            <a href="#" class="active">Home</a>
-            <a href="#">Skills</a>
-            <a href="#">Education</a>
-            <a href="#">Courses</a>
-            <a href="#">Experience</a>
-            <a href="#">Languages</a>
-            <a href="#">Contact</a>
-        </nav>
-    </header>
-    <sectin class="home">
-        <div class="home-img">
-            <img src="avatar.jpg" alt="">
-        </div>
-        <div class="home-content">
-            <h1>Hi, It's <span>Vitalina Hrabovska</span></h1>
-            <h3 class="typing-text">I'm a <span>QA</span></h3>
-            <p>Software Engineering student passionate about starting a career in QA. Hands-on experience in requirements analysis, use case diagrams and test case writing for academic projects. Strong communication skills as a class representative, with a high sense of responsibility, adaptability, and curiosity. Quick learner, motivated to grow as a QA professional.</p>
-            <div class="sotial-icons">
-                <a href="#"><i class="fa-brands fa-linkedin"></i></a>
-                <a href="#"><i class="fa-brands fa-github"></i></a>
-                <a href="#"><i class="fa-brands fa-instagram"></i></a>
+    <!--nav menu-->
+    <nav>
+        <div class="nav-container">
+            <div class="logo-wrapper"  data-aos="zoom-in" data-aos-duration = "1500">
+                <div class="logo">
+                    <span>Vitalina</span>
+                </div>
             </div>
-            <a href="#" class="btn">Hire me</a>
+            <div class="links">
+                <div class="link" data-aos="fade-up" data-aos-duration = "1500" data-aos-delay="100"><a href="#home">Home</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration = "1500" data-aos-delay="200"><a href="#about">About</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration = "1500" data-aos-delay="300"><a href="#skills">Skills</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration = "1500" data-aos-delay="400"><a href="#education">Education</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration = "1500" data-aos-delay="500"><a href="#courses">Courses</a></div>
+                <div class="link" data-aos="fade-up" data-aos-duration = "1500" data-aos-delay="600"><a href="#contact">Contact</a></div>
+            </div>
+            <i class="fa-solid fa-bars hamburg" onclick ="hamburg()"></i>
         </div>
-    </sectin>
+        <div class="dropdown">
+            <div class="links">
+                <div href="#home">Home</div>
+                <div href="#about">About</div>
+                <div href="#skills">Skills</div>
+                <div href="#education">Education</div>
+                <div href="#courses">Courses</div>
+                <div href="#contact">Contact</div>
+                <i class="fa-solid fa-bars hamburg" onclick ="hamburg()"></i>
+            </div>
+        </div>
+    </nav>
+    <section>
+        <div class="main-container">
+            <div class="image" data-aos="zoom-out" data-aos-duration = "3000">
+                <img src="avatar.jpg" alt="">
+            </div>
+            <div class="content">
+                <h1 data-aos="fade-left" data-aos-duration = "1500" data-aos-delay="700">
+                    Hi! It's
+                    <span>Vitalina Hrabovska</span>
+                </h1>
+                <div class="typewriter" data-aos="fade-right" data-aos-duration = "1500" data-aos-delay="1100">
+                    I'm a
+                    <span class="typewriter-text">
+                        QA
+                    </span>
+                    <label for="">
+
+                    </label>
+                </div>
+                <p data-aos="flip-up" data-aos-duration = "1500" data-aos-delay="1200">Software Engineering student passionate about starting a career in QA. Hands-on experience in requirements analysis, use case diagrams and test case writing for academic projects. Strong communication skills as a class representative, with a high sense of responsibility, adaptability, and curiosity. Quick learner, motivated to grow as a QA professional.</p>
+                <div class="sotial-links">
+                    <a href="https://www.linkedin.com/in/hrabovska-vitalina-73847a360/" data-aos="fade-up" data-aos-duration = "1500" data-aos-delay="1300"><i class="fa-brands fa-linkedin"></i></a>
+                    <a href="https://github.com/grvitalina" data-aos="fade-up" data-aos-duration = "1500" data-aos-delay="1400"><i class="fa-brands fa-github"></i></a>
+                    <a href="https://www.instagram.com/vigra_ua/" data-aos="fade-up" data-aos-duration = "1500" data-aos-delay="1500"><i class="fa-brands fa-instagram"></i></a>
+                </div>
+                <div class="btn" data-aos="zoom-in" data-aos-duration = "1500" data-aos-delay="1700">
+                    <button>
+                        Hire me
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+    
+
+
+    <!--About Section Start-->
+    <section class="about"id="about">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration = "1500" >
+                <span>
+                    About Me
+                </span>
+            </div>
+            <div class="about-details">
+                <div class="left" data-aos="fade-right" data-aos-duration = "1500" data-aos-delay="200">
+                    <img src="avatar.jpg" alt="">
+                </div>
+                <div class="right">
+                    <div class="topic" data-aos="fade-left" data-aos-duration = "1500" data-aos-delay="200"> Something about me</div>
+                    <p data-aos="flip-up" data-aos-duration = "1500" data-aos-delay="400">
+                        Very big text about something.Software Engineering student passionate about starting a career in QA. Hands-on experience in requirements analysis, use case diagrams and test case writing for academic projects. Strong communication skills as a class representative, with a high sense of responsibility, adaptability, and curiosity. Quick learner, motivated to grow as a QA professional.
+                    </p>
+                    <div class="button" data-aos="zoom-in" data-aos-duration = "1500" data-aos-delay="500">
+                        <button>Download CV</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <!--Skill section start-->
+    <section class="skills"id="skills">
+        <div class="content">
+            <div class="title" data-aos="fade-up" data-aos-duration = "1500">
+                <span>
+                    My Skills
+                </span>
+            </div>
+            <div class="skills-details">
+                <div class="text">
+                    <p data-aos="flip-up" data-aos-duration = "1500" data-aos-delay="200">Software Engineering student passionate about starting a career in QA. Hands-on experience in requirements analysis, use case diagrams and test case writing for academic projects. Strong communication skills as a class representative, with a high sense of responsibility, adaptability, and curiosity. Quick learner, motivated to grow as a QA professional.</p>
+                    <div class="experience">
+                        <div class="left">
+                            <div class="topic" data-aos="fade-up" data-aos-duration = "1500">Hard Skills</div>
+                            <ul>
+                                <li data-aos="fade-right" data-aos-duration = "1500" data-aos-delay="200">Software testing fundamentals, test case creation</li>
+                                <li data-aos="fade-right" data-aos-duration = "1500" data-aos-delay="300">Bug tracking & reporting</li>
+                                <li data-aos="fade-right" data-aos-duration = "1500" data-aos-delay="400">Use Case diagrams, User Story, requirements</li>
+                                <li data-aos="fade-right" data-aos-duration = "1500" data-aos-delay="500">Black box test design techniques</li>
+                                <li data-aos="fade-right" data-aos-duration = "1500" data-aos-delay="600">Basic SQL knowledge</li>
+                                <li data-aos="fade-right" data-aos-duration = "1500" data-aos-delay="700">Understanding  of SDLC/STLC</li>
+                                <li data-aos="fade-right" data-aos-duration = "1500" data-aos-delay="800">Basic HTML knowledge</li>
+                                <li data-aos="fade-right" data-aos-duration = "1500" data-aos-delay="900">Basic Python knowledge</li>
+                            </ul>
+                        </div>
+                        <div class="right">                            
+                            <div class="topic" data-aos="fade-up" data-aos-duration = "1500">Soft Skills</div>
+                            <ul >
+                                <li data-aos="fade-left" data-aos-duration = "1500" data-aos-delay="200">High sense of responsibility</li>
+                                <li data-aos="fade-left" data-aos-duration = "1500" data-aos-delay="300">Analytical thinking</li>
+                                <li data-aos="fade-left" data-aos-duration = "1500" data-aos-delay="400">Teamwork communication</li>
+                                <li data-aos="fade-left" data-aos-duration = "1500" data-aos-delay="500">Curiosity and proactive learning</li>
+                                <li data-aos="fade-left" data-aos-duration = "1500" data-aos-delay="600">Time management</li>
+                                <li data-aos="fade-left" data-aos-duration = "1500" data-aos-delay="700">Adaptability</li>
+                                <li data-aos="fade-left" data-aos-duration = "1500" data-aos-delay="800">Continuous improvement mindset</li>
+                                <li data-aos="fade-left" data-aos-duration = "1500" data-aos-delay="900">Public speaking</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!--Education Section Start-->
+    <section class="education" id="education">
+        <div class="content">
+            <div class="title">
+                <span>
+                    Education
+                </span>
+            </div>
+            <div class="education-details">
+                <div class="text">
+                    <div class="eduproj">
+                        <div class="left">
+                            <div class="topic">Education</div>
+                            <h3><a href="#">Kherson State University</a></h3>
+                            <p>Faculty of Computer Science, Physics and Mathematics</p>
+                            <p>121 Software Engineering</p>
+                            <p>Start 2023 - Expected completion 2027</p>
+                            <p>Scholarship of the President of Ukraine 2024/2025</p>
+                        </div>
+                        <div class="right">
+                            <div class="topic">Projects Experience</div>
+                            <h3>University Projects: LinguaLand & LinguaLand+</h3>
+                            <ul>
+                                <li>Requirements analysis and documentation</li>
+                                <li>Use Case, State Machine and other diagrams design</li>
+                                <li>Writing and validating requirements</li>
+                                <li>Use Cases and Test Cases writing</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+    </section>
+
+    <!--Courses Section Start-->
+
+    <!--Contact Section Start-->
+
+    <!--Footer Section Start-->
+    <footer>
+        <div class="text">
+            <span>Created By Vitalina</span>
+        </div>
+    </footer>
+
+
+
+
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init({offset:0});
+  </script>
+  <script src="script.js"></script>
+
 </body>
 </html>
