@@ -1,0 +1,72 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@100;200;300;400;500;600&display=swap');
+@import url("style.css");
+
+@media (max-width: 1000px){
+    .main-container{
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+    .about .about-details{
+        justify-content: center;
+        flex-direction: column;
+    }
+    .about .about-details .left{
+        display: flex;
+        justify-content: center;
+        width: 100%;
+    }
+    .about-details .right{
+        width: 90%;
+        margin: 40px 0;
+    }
+
+}
+
+@media(max-width:900px){
+    .about .left img{
+        height: 350px;
+        width: 350px;
+    }
+}
+@media(max-width:968px){
+
+    nav .logo{
+        position: absolute;
+        top:16px;
+        left:15px;
+        font-size: 1.5rem;
+    }
+
+    section .main-container{
+        padding-left: 0px;
+        display: flex;
+        flex-direction: column;
+    }
+
+    .nav-container .links{
+        display: none;
+    }
+
+    .hamburg,
+    .cancel{
+        display: block;
+    }
+
+    .main-container .content{
+        margin-top: 20px;
+        width: 80%;
+    }
+
+    .sotial-links i{
+        width: 2.5rem;
+        height:2.5rem;
+        font-size: 1.5rem;
+    }
+
+
+    .main-container .image{
+        height: 540px;
+    }
+
+}
